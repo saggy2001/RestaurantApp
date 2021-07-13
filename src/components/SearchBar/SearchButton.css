@@ -1,0 +1,13 @@
+.button-conatiner {
+  max-width: 450px;
+  margin: 0 12px;
+  padding: 5px 8px;
+  display: flex;
+  border-radius: 16px;
+  background-color: #ececec;
+  align-items: center;
+}
+.button-text {
+  padding: 0 3px;
+  font-size: 12px;
+}

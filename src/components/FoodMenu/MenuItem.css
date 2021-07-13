@@ -1,0 +1,21 @@
+.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 15px;
+}
+.item-container {
+  padding: 10px;
+}
+@media screen and (min-width: 500px) {
+  .menu-item {
+    width: 25vw;
+    height: 25vw;
+  }
+  .item-container {
+    padding: 20px;
+  }
+}

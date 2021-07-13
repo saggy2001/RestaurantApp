@@ -1,0 +1,7 @@
+.menu-list {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

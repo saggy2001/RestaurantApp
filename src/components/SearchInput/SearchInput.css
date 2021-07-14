@@ -1,0 +1,16 @@
+.input-conatiner {
+  max-width: 450px;
+  margin: 0 15px;
+  padding: 5px 8px;
+  display: flex;
+  border-radius: 16px;
+  background-color: #ececec;
+  align-items: center;
+}
+.input-text {
+  padding: 0px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #ececec;
+}

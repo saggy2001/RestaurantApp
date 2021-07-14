@@ -6,12 +6,17 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import SearchButton from "../components/SearchBar/SearchButton";
 import { MenuDetails } from "../Data/RestaurantMenu";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <SearchButton />
+
+      <Link to="/search">
+        <SearchButton />
+      </Link>
+
       <Carousel />
       <MenuHeader heading="Restaurant Food" />
       <MenuList MenuDetails={MenuDetails} />

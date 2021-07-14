@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  margin: 25px 15px;
+}
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(74, 228, 82, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

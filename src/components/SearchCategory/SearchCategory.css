@@ -1,0 +1,20 @@
+.category-container {
+  padding: 15px;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-container select {
+  border: none;
+  outline: none;
+}
+.img-container {
+  padding: 25px;
+}
+.img-container p {
+  padding: 10px 20px;
+}
+.img-container img {
+  width: 100%;
+}

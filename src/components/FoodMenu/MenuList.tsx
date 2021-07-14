@@ -1,6 +1,7 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import "./MenuList.css";
+import SeeMore from "./SeeMore";
 type Props = {
   MenuDetails: {
     title: string;
@@ -14,6 +15,7 @@ const MenuList = ({ MenuDetails }: Props) => {
       {MenuDetails.map((value, index) => {
         return <MenuItem key={index} title={value.title} url={value.url} />;
       })}
+      <SeeMore />
     </div>
   );
 };

@@ -2,8 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import restaurant1 from "../../images/restaurant1.jpg";
-import restaurant2 from "../../images/restaurant2.jpg";
 
 import "./Carousel.css";
 
@@ -28,9 +26,17 @@ const Carousel = () => {
       }}
     >
       <Slider {...settings}>
-        <img src={restaurant1} alt="res1" className="carouselImage" />
+        <img
+          src="./images/restaurant1.jpg"
+          alt="res1"
+          className="carouselImage"
+        />
 
-        <img src={restaurant2} alt="res1" className="carouselImage" />
+        <img
+          src="./images/restaurant2.jpg"
+          alt="res1"
+          className="carouselImage"
+        />
       </Slider>
     </div>
   );

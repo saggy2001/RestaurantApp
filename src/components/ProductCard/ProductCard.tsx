@@ -1,17 +1,18 @@
 import React from "react";
 import "./ProductCard.css";
+type Props = {
+  title: string;
+  url: string;
+};
 
-const ProductCard = () => {
+const ProductCard = ({ title, url }: Props) => {
   return (
     <div className="card-container">
       <div className="img-container">
-        <img
-          src="https://static.toiimg.com/thumb/63201465.cms?width=1200&height=900"
-          alt="product"
-        />
+        <img src={url} alt="product" />
       </div>
       <div className="detail-container">
-        <h4>Chicken Biryani</h4>
+        <h4>{title}</h4>
         <p>1 plate(Aminia)</p>
         <div>₹65</div>
       </div>

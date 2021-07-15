@@ -24,6 +24,7 @@
 .category-container select {
   border: none;
   outline: none;
+  background: #faf9f9;
 }
 hr.line {
   border-top: 1px solid #a1a1a1;

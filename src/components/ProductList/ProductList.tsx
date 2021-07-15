@@ -10,7 +10,7 @@ const ProductList = ({ data }: Props) => {
   return (
     <div>
       {data.map((item, index) => {
-        return <ProductCard key={index} />;
+        return <ProductCard key={index} title={item.title} url={item.url} />;
       })}
     </div>
   );

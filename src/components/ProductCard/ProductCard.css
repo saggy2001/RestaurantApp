@@ -1,0 +1,55 @@
+.card-container {
+  background-color: #ffffff;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+}
+.img-container {
+  width: 40%;
+}
+.img-container img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.detail-container {
+  padding: 0px 10px;
+  color: #312929;
+
+  /* width: 50%; */
+}
+.detail-container h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.detail-container p {
+  font-family: "Times New Roman", Times, serif;
+}
+.detail-container div {
+  margin: 5px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #db4343;
+}
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(60, 185, 43);
+  position: absolute;
+  border-start-start-radius: 10px;
+  border-end-end-radius: 10px;
+  bottom: 0px;
+  right: 0px;
+}
+.add-btn span {
+  font-size: 25px;
+  color: white;
+}

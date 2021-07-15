@@ -14,3 +14,17 @@
   outline: none;
   background-color: #ececec;
 }
+.category-container {
+  padding: 15px 20px;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-container select {
+  border: none;
+  outline: none;
+}
+hr.line {
+  border-top: 1px solid #a1a1a1;
+}

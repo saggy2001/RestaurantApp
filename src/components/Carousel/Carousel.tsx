@@ -16,13 +16,13 @@ const Carousel = () => {
     swipeToSlide: true,
     autoplaySpeed: 10000,
     cssEase: "linear",
+    arrows: false,
   };
   return (
     <div
       style={{
         marginTop: "25px",
         marginBottom: "15px",
-        width: "98%",
       }}
     >
       <Slider {...settings}>

@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin: 25px 15px;
+  padding: 25px 15px;
 }
 .cart-button {
   display: flex;
@@ -10,7 +10,8 @@
   height: 50px;
   background-color: rgba(74, 228, 82, 0.5);
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 15px;
+  z-index: 5;
 }

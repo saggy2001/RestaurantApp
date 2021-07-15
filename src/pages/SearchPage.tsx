@@ -1,14 +1,17 @@
 import React from "react";
-import SearchCategory from "../components/SearchCategory/SearchCategory";
+import ProductList from "../components/ProductList/ProductList";
+// import SearchCategory from "../components/SearchCategory/SearchResult";
 import SearchInput from "../components/SearchInput/SearchInput";
 import SearchNav from "../components/SearchNav/SearchNav";
+import { MenuDetails } from "../Data/RestaurantMenu";
 
 const SearchPage = () => {
   return (
     <div>
       <SearchNav />
       <SearchInput />
-      <SearchCategory />
+      {/* <SearchCategory /> */}
+      <ProductList data={MenuDetails} />
     </div>
   );
 };

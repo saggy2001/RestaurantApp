@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import "./MenuList.css";
 import SeeMore from "./SeeMore";
@@ -15,7 +16,9 @@ const MenuList = ({ MenuDetails }: Props) => {
       {MenuDetails.map((value, index) => {
         return <MenuItem key={index} title={value.title} url={value.url} />;
       })}
-      <SeeMore />
+      <Link to="/product">
+        <SeeMore />
+      </Link>
     </div>
   );
 };

@@ -1,7 +1,3 @@
-.container {
-  display: flex;
-  padding: 25px 15px;
-}
 .cart-button {
   display: flex;
   justify-content: center;

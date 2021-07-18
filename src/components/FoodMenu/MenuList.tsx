@@ -7,6 +7,7 @@ type Props = {
   MenuDetails: {
     title: string;
     url: string;
+    id: number;
   }[];
 };
 
@@ -14,9 +15,16 @@ const MenuList = ({ MenuDetails }: Props) => {
   return (
     <div className="menu-list">
       {MenuDetails.map((value, index) => {
-        return <MenuItem key={index} title={value.title} url={value.url} />;
+        return (
+          <MenuItem
+            key={index}
+            title={value.title}
+            url={value.url}
+            id={value.id}
+          />
+        );
       })}
-      <Link to="/product">
+      <Link to="/products">
         <SeeMore />
       </Link>
     </div>

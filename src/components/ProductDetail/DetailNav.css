@@ -1,0 +1,14 @@
+.detail-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: white;
+}
+.detail-nav h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,25 @@
+import React from "react";
+import "./Description.css";
+
+const Description = ({ title }: { title: string }) => {
+  return (
+    <div className="description">
+      <h3>{title}</h3>
+      <p>
+        Available from 12 pm to 9pm!! Best Biryanies are here. Choose your
+        Favourite One
+      </p>
+      <div className="btn-wrapper">
+        <div className="amount-btn active">1 Roll(Aminia)</div>
+        <div className="amount-btn">1 Roll(Arsalan)</div>
+      </div>
+      <div className="price-box">
+        <span className="price">₹45</span>
+        <span>/1 Roll (Aminia)</span>
+      </div>
+      <div className="add-cart">Add to cart</div>
+    </div>
+  );
+};
+
+export default Description;

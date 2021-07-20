@@ -10,6 +10,9 @@
   border: 1px solid #eee;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
+.card-container a {
+  display: flex;
+}
 .img-container {
   width: 40%;
 }
@@ -49,6 +52,7 @@
   border-end-end-radius: 10px;
   bottom: 0px;
   right: 0px;
+  z-index: 2;
 }
 .add-btn span {
   font-size: 25px;

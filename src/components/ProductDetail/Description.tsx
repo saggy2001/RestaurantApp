@@ -1,7 +1,16 @@
 import React from "react";
 import "./Description.css";
+import { Products } from "../../Data/Products";
 
-const Description = ({ title }: { title: string }) => {
+const Description = ({
+  title,
+  onAdd,
+  id,
+}: {
+  title: string;
+  onAdd: Function;
+  id: number;
+}) => {
   return (
     <div className="description">
       <h3>{title}</h3>
@@ -17,7 +26,9 @@ const Description = ({ title }: { title: string }) => {
         <span className="price">₹45</span>
         <span>/1 Roll (Aminia)</span>
       </div>
-      <div className="add-cart">Add to cart</div>
+      <div className="add-cart" onClick={() => onAdd(Products[id])}>
+        Add to cart
+      </div>
     </div>
   );
 };

@@ -3,12 +3,17 @@ import PageNav from "../components/PageNav/PageNav";
 import ProductList from "../components/ProductList/ProductList";
 import SearchButton from "../components/SearchBar/SearchButton";
 import { Products } from "../Data/Products";
-const ProductPage = () => {
+
+type Props = {
+  onAdd: Function;
+  cartCount: number;
+};
+const ProductPage = ({ onAdd, cartCount }: Props) => {
   return (
     <div>
-      <PageNav header="Product" />
+      <PageNav header="Product" cartCount={cartCount} />
       <SearchButton />
-      <ProductList data={Products} />
+      <ProductList data={Products} onAdd={onAdd} />
     </div>
   );
 };

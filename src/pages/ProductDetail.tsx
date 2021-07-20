@@ -5,19 +5,25 @@ import Description from "../components/ProductDetail/Description";
 import { useParams } from "react-router-dom";
 import { Products } from "../Data/Products";
 
-const ProductDetail = () => {
+const ProductDetail = ({
+  cartCount,
+  onAdd,
+}: {
+  cartCount: number;
+  onAdd: Function;
+}) => {
   interface ParamTypes {
     productId: string;
   }
 
   let { productId } = useParams<ParamTypes>();
   let id: number = parseInt(productId);
-  const product: { title: string; url: string } = Products[id];
+  const product: { title: string; url: string; id: number } = Products[id];
   return (
     <div>
-      <DetailNav title={product.title} />
+      <DetailNav title={product.title} cartCount={cartCount} />
       <ProductCarousel url={product.url} />
-      <Description title={product.title} />
+      <Description title={product.title} onAdd={onAdd} id={product.id} />
     </div>
   );
 };

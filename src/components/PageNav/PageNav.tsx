@@ -3,13 +3,14 @@ import CartButton from "../Common Components/CartButton";
 import "./PageNav.css";
 type Props = {
   header: string;
+  cartCount: number;
 };
 
-const PageNav = ({ header }: Props) => {
+const PageNav = ({ header, cartCount }: Props) => {
   return (
     <div className="container">
       <h1>{header}</h1>
-      <CartButton />
+      <CartButton cartCount={cartCount} />
     </div>
   );
 };

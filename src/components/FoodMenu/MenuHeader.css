@@ -1,11 +1,8 @@
 .menu-header {
   text-transform: uppercase;
-  padding-left: 25px;
-  margin-top: 25px;
-}
-@media screen and (min-width: 500px) {
-  .menu-header {
-    text-align: center;
-    padding: 25px;
-  }
+  padding: var(--padding-large) 0;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--text-secondary-color);
+  font-size: 2rem;
 }

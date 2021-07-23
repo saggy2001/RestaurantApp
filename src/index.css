@@ -4,6 +4,39 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html {
+  font-size: 12px;
+}
+
+:root {
+  --margin: 15px;
+  --background-color: #faf9f9;
+  --background-secondary: #f1f1f1;
+  --padding-small: 5px;
+  --padding-medium: 10px;
+  --padding-large: 15px;
+  --text-primary-color: #9c9c9c;
+  --text-secondary-color: #535353;
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --margin: 25px;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+  }
+  html {
+    font-size: 16px;
+  }
+}
 body {
-  background: #faf9f9;
+  background: var(--background-color);
+  margin: var(--margin);
 }

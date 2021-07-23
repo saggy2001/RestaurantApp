@@ -1,38 +1,39 @@
 .card-container {
   background-color: #ffffff;
-  height: 120px;
-  margin: 10px;
-  display: flex;
-  align-items: flex-start;
-  border-radius: 10px;
-  padding: 10px;
+  height: 130px;
+  margin: var(--margin) 0;
+  /* display: flex; */
+  /* align-items: flex-start; */
+  border-radius: 1.5rem;
+  padding: var(--padding-medium);
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid var(--background-secondary);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 .card-container a {
   display: flex;
 }
 .img-container {
-  width: 40%;
+  width: 100%;
 }
 .img-container img {
-  border-radius: 10px;
+  border-radius: 1.2rem;
   width: 100%;
   height: auto;
-  max-height: 100px;
+  max-height: 110px;
 }
 .detail-container {
-  padding: 0px 10px;
+  padding: 0px var(--padding-medium);
+  width: 100%;
   color: #312929;
-
-  /* width: 50%; */
 }
 .detail-container h4 {
+  font-size: 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .detail-container p {
-  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-family: cursive;
 }
 .detail-container div {
   margin: 5px 0px;
@@ -57,4 +58,29 @@
 .add-btn span {
   font-size: 25px;
   color: white;
+}
+@media screen and (min-width: 480px) {
+  .card-container {
+    height: 170px;
+  }
+  .img-container img {
+    max-height: 150px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .card-container {
+    height: 200px;
+  }
+  .img-container img {
+    max-height: 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    height: 250px;
+    max-width: 768px;
+  }
+  .img-container img {
+    max-height: 220px;
+  }
 }

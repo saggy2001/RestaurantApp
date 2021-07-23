@@ -1,10 +1,10 @@
-.carouselImage {
-  width: 100%;
-  padding: 10px;
-  height: auto;
-  border-radius: 25px;
+.carousel-container {
+  padding: var(--margin) 0;
 }
-
+.carouselImage {
+  border-radius: 2rem;
+  padding: 0 var(--padding-small);
+}
 .slick-dots {
   top: 85%;
   left: 0px;

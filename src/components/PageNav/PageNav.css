@@ -1,4 +1,9 @@
 .container {
   display: flex;
-  padding: 25px 15px;
+  padding: var(--padding-large) 0;
+}
+.container h1 {
+  font-size: 3rem;
+  font-family: cursive;
+  color: var(--text-secondary-color);
 }

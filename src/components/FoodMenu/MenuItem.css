@@ -3,19 +3,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40vw;
-  height: 40vw;
-  border-radius: 15px;
+  width: 37.5vw;
+  height: 37.5vw;
+  border-radius: 1.5rem;
+}
+.menu-item h4 {
+  color: var(--background-secondary);
+  font-size: 1.3rem;
+  font-family: cursive;
+  text-align: center;
 }
 .item-container {
-  padding: 10px;
+  padding: var(--padding-medium);
 }
-@media screen and (min-width: 500px) {
+
+@media screen and (min-width: 768px) {
   .menu-item {
     width: 25vw;
     height: 25vw;
-  }
-  .item-container {
-    padding: 20px;
   }
 }

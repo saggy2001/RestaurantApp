@@ -18,9 +18,7 @@ const MenuItem = ({ title, url, id }: Props) => {
           }}
           className="menu-item"
         >
-          <h4 style={{ color: "#ffffff", textAlign: "center", padding: "2px" }}>
-            {title}
-          </h4>
+          <h4>{title}</h4>
         </div>
       </div>
     </Link>

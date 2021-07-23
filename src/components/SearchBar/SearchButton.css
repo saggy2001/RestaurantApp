@@ -1,17 +1,28 @@
-.button-conatiner {
+.button-container {
   max-width: 450px;
-  margin: 0 12px 20px 12px;
-  padding: 5px 8px;
+  margin: var(--margin) 0;
+  padding: var(--padding-large) var(--padding-medium);
   display: flex;
-  border-radius: 16px;
-  background-color: #ececec;
+  border-radius: 1.5rem;
+  background-color: var(--background-secondary);
   align-items: center;
 }
+
 .button-text {
-  padding: 0 3px;
-  font-size: 12px;
+  padding: 0 var(--padding-medium);
+  font-size: 1.1rem;
+  font-family: cursive;
+  color: var(--text-primary-color);
 }
 a {
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .button-container {
+    position: absolute;
+    width: 500px;
+    top: 15px;
+    left: 20%;
+  }
 }

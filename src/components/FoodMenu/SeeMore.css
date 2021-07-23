@@ -5,16 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
-  height: 40vw;
-  border-radius: 15px;
-  border: 1.5px solid #27cf4b;
+  width: 37.5vw;
+  height: 37.5vw;
+  border-radius: 1.5rem;
+  border: 2px solid #27cf4b;
 }
 .seemore-item h4 {
   color: #27cf4b;
+  font-size: 1.4rem;
+  font-family: cursive;
   text-align: center;
-  padding: "2px";
-  font-weight: "normal";
+  padding: var(--padding-small);
+  font-weight: normal;
 }
 .seemore-container {
   padding: 10px;

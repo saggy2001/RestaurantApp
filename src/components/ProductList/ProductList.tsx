@@ -6,9 +6,8 @@ type Props = {
     url: string;
     id: number;
   }[];
-  onAdd: Function;
 };
-const ProductList = ({ data, onAdd }: Props) => {
+const ProductList = ({ data }: Props) => {
   return (
     <div>
       {data.map((item, index) => {
@@ -18,7 +17,6 @@ const ProductList = ({ data, onAdd }: Props) => {
             title={item.title}
             url={item.url}
             id={item.id}
-            onAdd={onAdd}
           />
         );
       })}

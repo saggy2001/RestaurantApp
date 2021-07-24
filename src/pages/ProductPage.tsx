@@ -4,17 +4,13 @@ import ProductList from "../components/ProductList/ProductList";
 import SearchButton from "../components/SearchBar/SearchButton";
 import { Products } from "../Data/Products";
 
-type Props = {
-  onAdd: Function;
-  cartCount: number;
-};
-const ProductPage = ({ onAdd, cartCount }: Props) => {
+const ProductPage = () => {
   return (
-    <div>
-      <PageNav header="Product" cartCount={cartCount} />
+    <>
+      <PageNav header="Product" />
       <SearchButton />
-      <ProductList data={Products} onAdd={onAdd} />
-    </div>
+      <ProductList data={Products} />
+    </>
   );
 };
 

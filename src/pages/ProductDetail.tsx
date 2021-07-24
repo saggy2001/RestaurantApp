@@ -5,13 +5,7 @@ import Description from "../components/ProductDetail/Description";
 import { useParams } from "react-router-dom";
 import { Products } from "../Data/Products";
 
-const ProductDetail = ({
-  cartCount,
-  onAdd,
-}: {
-  cartCount: number;
-  onAdd: Function;
-}) => {
+const ProductDetail = () => {
   interface ParamTypes {
     productId: string;
   }
@@ -21,9 +15,9 @@ const ProductDetail = ({
   const product: { title: string; url: string; id: number } = Products[id];
   return (
     <div>
-      <DetailNav title={product.title} cartCount={cartCount} />
+      <DetailNav title={product.title} />
       <ProductCarousel url={product.url} />
-      <Description title={product.title} onAdd={onAdd} id={product.id} />
+      <Description title={product.title} id={product.id} />
     </div>
   );
 };

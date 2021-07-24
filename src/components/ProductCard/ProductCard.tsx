@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./ProductCard.css";
 import { Products } from "../../Data/Products";
+import { CartContext } from "../../App";
 
 type Props = {
   title: string;
   url: string;
   id: number;
-  onAdd: Function;
 };
 
-const ProductCard = ({ title, url, id, onAdd }: Props) => {
+const ProductCard = ({ title, url, id }: Props) => {
+  const { addItem } = useContext(CartContext);
   return (
     // <Link to={`/product/${id}`}>
     <div className="card-container">
@@ -26,7 +27,7 @@ const ProductCard = ({ title, url, id, onAdd }: Props) => {
       </Link>
       {/* </Link> */}
       <div className="add-btn">
-        <span onClick={() => onAdd(Products[id])}>+</span>
+        <span onClick={() => addItem(Products[id])}>+</span>
       </div>
     </div>
     // </Link>

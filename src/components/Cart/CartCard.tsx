@@ -1,25 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MdDelete } from "react-icons/md";
 import "./CartCard.css";
 import { Products } from "../../Data/Products";
+import { CartContext } from "../../App";
 
 const CartCard = ({
   title,
   url,
   qty,
   id,
-  onAdd,
-  onRemove,
-  onDelete,
 }: {
   title: string;
   url: string;
   qty: number;
   id: number;
-  onAdd: Function;
-  onRemove: Function;
-  onDelete: Function;
 }) => {
+  const { removeItem, addItem, subtractItem } = useContext(CartContext);
   return (
     <div className="cart-card">
       <div className="card-img">
@@ -28,17 +24,13 @@ const CartCard = ({
       <div className="card-detail">
         <h4>{title}</h4>
         <p>1 Plate</p>
-        <p className="price">₹75</p>
-        <MdDelete
-          color="red"
-          size="25px"
-          onClick={() => onDelete(Products[id])}
-        />
+        <span className="price">₹75</span>
+        <MdDelete color="red" size="25px" onClick={() => removeItem(id)} />
       </div>
       <div className="item-counter">
-        <span onClick={() => onAdd(Products[id])}>+</span>
+        <span onClick={() => addItem(Products[id])}>+</span>
         <span>{qty}</span>
-        <span onClick={() => onRemove(Products[id])}>-</span>
+        <span onClick={() => subtractItem(Products[id])}>-</span>
       </div>
     </div>
   );

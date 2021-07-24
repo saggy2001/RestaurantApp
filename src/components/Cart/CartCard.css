@@ -1,37 +1,54 @@
 .cart-card {
-  padding: 10px 0px;
+  padding: var(--padding-large) 0px;
   background-color: white;
   display: flex;
   justify-content: space-around;
-  border-radius: 10px;
-  margin: 15px 15px;
+  border-radius: 1.5rem;
+  margin: var(--margin) 0;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 .card-img {
-  width: 30%;
+  width: 40%;
 }
 .card-img img {
-  border-radius: 10px;
+  border-radius: 1rem;
   width: 100%;
   height: auto;
   max-height: 300px;
 }
-.cart-detail {
+.card-detail {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
+.card-detail h4 {
+  font-size: 1.4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+.card-detail p {
+  font-size: 1.1rem;
+  font-family: cursive;
+}
 .item-counter {
   border: 1.4px solid #a7a5a5;
-  padding: 0px 10px;
-  border-radius: 5px;
+  padding: 0 var(--padding-medium);
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-height: 80px;
+  max-height: 10rem;
+}
+.item-counter span {
+  font-size: 1.3rem;
+  color: var(--text-secondary-color);
+  cursor: pointer;
 }
 .price {
-  margin: 5px 0px;
+  font-family: cursive;
+  font-weight: bold;
+  color: #12b612;
+  padding: var(--padding-small) 0px;
+  font-size: 1.5rem;
 }

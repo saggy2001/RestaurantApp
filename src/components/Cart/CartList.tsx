@@ -1,30 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartCard from "./CartCard";
+import { CartContext } from "../../App";
 
-const CartList = ({
-  cartItems,
-  onAdd,
-  onRemove,
-  onDelete,
-}: {
-  cartItems: { id: number; title: string; url: string; qty: number }[];
-  onAdd: Function;
-  onRemove: Function;
-  onDelete: Function;
-}) => {
+const CartList = () => {
+  const { items } = useContext(CartContext);
   return (
     <div>
-      {cartItems.map((item) => {
+      {items.map((item, index) => {
         return (
           <CartCard
-            key={item.id}
+            key={index}
             id={item.id}
             title={item.title}
             url={item.url}
             qty={item.qty}
-            onAdd={onAdd}
-            onRemove={onRemove}
-            onDelete={onDelete}
           />
         );
       })}

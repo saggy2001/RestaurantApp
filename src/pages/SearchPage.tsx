@@ -4,13 +4,7 @@ import ProductList from "../components/ProductList/ProductList";
 import SearchInput from "../components/SearchInput/SearchInput";
 import PageNav from "../components/PageNav/PageNav";
 import { Products } from "../Data/Products";
-const SearchPage = ({
-  onAdd,
-  cartCount,
-}: {
-  onAdd: Function;
-  cartCount: number;
-}) => {
+const SearchPage = () => {
   const [input, setInput] = useState("");
   const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.currentTarget.value);
@@ -20,10 +14,10 @@ const SearchPage = ({
   });
   return (
     <div>
-      <PageNav header="Search" cartCount={cartCount} />
+      <PageNav header="Search" />
       <SearchInput onInputChange={onInputChange} />
       {/* <SearchCategory /> */}
-      <ProductList data={filteredProducts} onAdd={onAdd} />
+      <ProductList data={filteredProducts} />
     </div>
   );
 };
